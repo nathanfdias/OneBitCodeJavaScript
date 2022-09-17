@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Imobiliárias</title>
+
+<script src="app.js"></script>
+<link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+    <main>
+            <div class="container">
+            <header class="header">
+                <div class="titles">
+                    <h2 class="title">Imóveis KINF Rio de Janeiro</h2>
+                    <h4 class="sub-title">Lista de Imóveis: </h4>
+                </div>
+            </header>
+
+            <form class="complete-form">
+                <p class="input-group">
+                    <label>Estado: </label>
+                    <input type="text" name="state" placeholder="Ex: Rio de Janeiro">
+                </p>
+                <p class="input-group">
+                    <label>Cidade: </label>
+                    <input type="text" name="city" placeholder="Ex: Niterói">
+                </p>
+                <p class="input-group">
+                    <label>Bairro: </label>
+                    <input type="text" name="neighborhood" placeholder="Ex: Itacoatiara">
+                </p>
+                <p class="input-group">
+                    <label>Numero: </label>
+                    <input type="text" name="number" placeholder="Ex: 13">
+                </p>
+                <p class="input-group">
+                    <label>Cep: </label>
+                    <input type="number" name="cep" placeholder="Ex: 2862000">
+                </p>
+                <p class="input-check">
+                    <label>Situação Imóvel: </label>
+                    <input type="radio" name="im-situation" id="rented">Alugado
+                    <input type="radio" name="im-situation" id="for-rent" checked>Não Alugado
+                </p>
+                <p class="input-check">
+                    <label>Tipo do Imóvel: </label>
+                    <input type="radio" name="im-home" id="house" checked>Casa
+                    <input type="radio" name="im-home" id="apartment">Apartamento
+                </p>
+
+                <button class="button-add" type="button" onclick="saveHouse()">Adicionar Imóvel</button>
+            </form>
+        </div>
+        <ul class="list" id="im-list"></ul>
+    </main>
+    
+    
+    
+</body>
+</html>

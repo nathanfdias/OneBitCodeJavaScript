@@ -1,0 +1,5 @@
+npm install @babel/core @babel/cli @babel/preset-env --save-dev
+transpilação: npx babel (ARQUIVO) "possiveis problemas de versoes ECS6 etc"
+transpilação com diretorio de saida: npx baber (arq) -o (new.arq)
+npx babel (arq) -o (new.arq) --presets=@babel/preset-env
+npx babel src --out-dir dist --presets=@babel/preset-env

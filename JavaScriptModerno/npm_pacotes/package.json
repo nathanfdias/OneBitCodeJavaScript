@@ -1,0 +1,14 @@
+{
+  "name": "npm_pacotes",
+  "version": "1.0.0",
+  "description": "Teste NPM",
+  "main": "app.js",
+  "scripts": {
+    "test": "NPM_test"
+  },
+  "author": "Nathan Faria",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
+}
